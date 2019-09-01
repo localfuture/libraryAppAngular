@@ -23,4 +23,12 @@ export class ApiService {
   viewAuthor() {
     return this.http.get("http://localhost:3000/showAuthors");
   }
+
+  registerUser(data) {
+    return this.http.post("http://localhost:3000/register",data);
+  }
+
+  loginUser(data) {
+    return this.http.post("http://localhost:3000/login",data);
+  }
 }

@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div id="masthead">
     <div class="container">
       <div class="row">
@@ -41,45 +42,45 @@
   
   
             <!--/stories-->
-            <div class="container mx-5 my-5 px-5 py-5">
+            <div class="container">
               <form (ngSubmit)=onsubmit(f) #f="ngForm">
-                <div class="form-group">
+                <div class="form-group col-md-11">
                   <label>author</label>
                   <input type="text" class="form-control" name="author" ngModel>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-11">
                   <label>country</label>
                   <input type="text" class="form-control" name="country" ngModel>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-11">
                   <label>imageLink</label>
                   <input type="text" class="form-control" name="imageLink" ngModel>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-11">
                   <label>language</label>
                   <input type="text" class="form-control" name="language" ngModel>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-11">
                   <label>link</label>
                   <input type="text" class="form-control" name="link" ngModel>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-11">
                   <label>pages</label>
                   <input type="text" class="form-control" name="pages" ngModel>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-11">
                   <label>title</label>
                   <input type="text" class="form-control" name="title" ngModel>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-11">
                   <label>year</label>
                   <input type="text" class="form-control" name="year" ngModel>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-11">
                     <label>description</label>
                     <input type="text" class="form-control" name="description" ngModel>
+                    <button type="submit" class="btn btn-primary my-2" style="float: right">Submit</button>
                   </div>
-                <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
               </form>
             </div>
             <!--/stories-->

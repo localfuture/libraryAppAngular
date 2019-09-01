@@ -16,6 +16,9 @@ h1,h2,h3,.highlight,.navbar a,#masthead h4 {
   font-family:'Oswald',arial narrow,sans-serif;
 }
 
+button{
+  margin-top: 30px;
+}
 footer {
 
   margin-top:40px;
@@ -25,6 +28,7 @@ footer {
  
 }
 
+.modal-footer {   border-top: 0px; }
 
 #masthead {
   min-height:199px;
@@ -56,6 +60,9 @@ footer {
   padding-top:0px;
 }
 
+#loginModal {
+  margin-top: 200px;
+}
 .navbar.affix {
   position:fixed;
   top:0;
