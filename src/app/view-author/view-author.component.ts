@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view-author',
@@ -9,9 +10,14 @@ import { ApiService } from '../api.service';
 export class ViewAuthorComponent implements OnInit {
 
   
-  constructor(private apiservice: ApiService) { }
+  constructor(private apiservice: ApiService, private router: Router) { }
 
   mydata: Array<object> = [];
+
+  singleViewAuthor(authorId){
+    localStorage.setItem("singleAuthorId",authorId);
+    this.router.navigateByUrl("/singleViewAuthor");
+  }
 
 
   ngOnInit() {

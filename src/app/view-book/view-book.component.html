@@ -52,7 +52,8 @@
                 <div class="row">
                   <div class="col-xs-9">
                     <h4><span class="label label-default">{{data.author}}</span></h4><h4>
-                    <small style="font-family:courier,'new courier';" class="text-muted">{{data.description}}<a href="#" class="text-muted">Read More</a></small>
+                    <small style="font-family:courier,'new courier';" class="text-muted">{{data.description}}<button type="button" class="btn btn-primary" (click)="singleViewBook(data._id)">Read More</button></small>
+
                     </h4></div>
                   <div class="col-xs-3"></div>
                 </div>

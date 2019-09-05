@@ -31,4 +31,13 @@ export class ApiService {
   loginUser(data) {
     return this.http.post("http://localhost:3000/login",data);
   }
+
+  findSingleBook(data){
+    return this.http.post("http://localhost:3000/singleViewBook",data);
+  }
+
+  findSingleAuthor(data){
+    return this.http.post("http://localhost:3000/singleViewAuthor",data);
+  }
+
 }

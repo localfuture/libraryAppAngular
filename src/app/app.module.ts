@@ -13,7 +13,8 @@ import { AddAuthorComponent } from './add-author/add-author.component';
 import { ViewAuthorComponent } from './view-author/view-author.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { SingleViewComponent } from './single-view/single-view.component';
+import { SingleViewBookComponent } from './single-view-book/single-view-book.component';
+import { SingleViewAuthorComponent } from './single-view-author/single-view-author.component';
 
 const appRoutes: Routes = [
   {path:'',component: AddBookComponent},
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
   {path:'viewAuthor',component: ViewAuthorComponent},
   {path:'login',component: LoginComponent},
   {path:'register',component: RegisterComponent},
-  {path:'singleView',component: SingleViewComponent}
+  {path:'singleViewBook',component: SingleViewBookComponent},
+  {path:'singleViewAuthor',component: SingleViewAuthorComponent}
 ]
 
 
@@ -36,7 +38,8 @@ const appRoutes: Routes = [
     ViewAuthorComponent,
     LoginComponent,
     RegisterComponent,
-    SingleViewComponent
+    SingleViewBookComponent,
+    SingleViewAuthorComponent,
   ],
   imports: [
     BrowserModule,

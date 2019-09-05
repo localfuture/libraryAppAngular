@@ -1,0 +1,13 @@
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+app.use(express.static(__dirname + '/dist/libraryAngular'));
+
+
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname + '/dist/libraryAngular/index.html'));
+  });
+
+  app.listen(process.env.PORT || 3000);

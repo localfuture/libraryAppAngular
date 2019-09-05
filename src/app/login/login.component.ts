@@ -16,23 +16,21 @@ export class LoginComponent implements OnInit {
   mydata: Array<object> = [];
 
   onsubmit(data: NgForm) {
-    console.log(data.value);
-    this.apiservice.loginUser(data.value).subscribe((Response: Array<object>) => {
-      this.mydata = Response;
-      console.log(this.mydata);
+
+    this.apiservice.loginUser(data.value).subscribe((Response: any) => {
+
+      if(Response == "Invalid Credentials") {
+        
+        alert(Response);
+       
+      } else {
+        
+        sessionStorage.setItem('loggedIn',Response[0]._id);
+       
+        this.router.navigateByUrl('/');
+      }
     });
   }
-
-  
-
-
-
-  // if (name == "admin" && pass == "1234") {
-  //   localStorage.setItem('loggedIn', 'true');
-  //   this.router.navigateByUrl('welcome');
-  // }
-
-
 
   ngOnInit() {
   }
