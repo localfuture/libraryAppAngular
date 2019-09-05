@@ -9,35 +9,35 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   insertBook(data){
-    return this.http.post("http://localhost:3000/addBook",data);
+    return this.http.post("https://libraryapiangular.herokuapp.com/addBook",data);
   }
 
   viewBook(){
-    return this.http.get("http://localhost:3000/viewBooksApi");
+    return this.http.get("https://libraryapiangular.herokuapp.com/viewBooksApi");
   }
 
   insertAuthor(data) {
-    return this.http.post("http://localhost:3000/addAuthorApi",data);
+    return this.http.post("https://libraryapiangular.herokuapp.com/addAuthorApi",data);
   }
 
   viewAuthor() {
-    return this.http.get("http://localhost:3000/showAuthors");
+    return this.http.get("https://libraryapiangular.herokuapp.com/showAuthors");
   }
 
   registerUser(data) {
-    return this.http.post("http://localhost:3000/register",data);
+    return this.http.post("https://libraryapiangular.herokuapp.com/register",data);
   }
 
   loginUser(data) {
-    return this.http.post("http://localhost:3000/login",data);
+    return this.http.post("https://libraryapiangular.herokuapp.com/login",data);
   }
 
   findSingleBook(data){
-    return this.http.post("http://localhost:3000/singleViewBook",data);
+    return this.http.post("https://libraryapiangular.herokuapp.com/singleViewBook",data);
   }
 
   findSingleAuthor(data){
-    return this.http.post("http://localhost:3000/singleViewAuthor",data);
+    return this.http.post("https://libraryapiangular.herokuapp.com/singleViewAuthor",data);
   }
 
 }
